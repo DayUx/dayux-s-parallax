@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pictures/logo.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800&amp;display=swap" rel="stylesheet">
+    <title>Normandy RP</title>
+</head>
+
+<body id=body>
+
+    <a href="."><img class=logo src="pictures/logopaulparallax.svg"></a>
+    <img class="layer" layer-depth=".01" src="pictures/1.png">
+    <img class="layer" layer-depth=".02" src="pictures/2.png">
+    <img class="layer" layer-depth=".03" src="pictures/3.png">
+    <img class="layer" layer-depth=".032" src="pictures/4.png">
+    <img class="layer" layer-depth=".48" src="pictures/5.png">
+    <img class="layer" layer-depth=".14" src="pictures/6.png">
+    <img class="layer" layer-depth=".4" src="pictures/7.png">
+    <img class="layer" layer-depth=".25" src="pictures/8.png">
+    <img class="layer" layer-depth=".29" src="pictures/9.png">
+    <img class="layer" layer-depth=".55" src="pictures/10.png">
+    <img class="layer" layer-depth=".16" src="pictures/11.png">
+    <img class="layer" layer-depth=".63" src="pictures/12.png">
+    <img class="layer" layer-depth=".67" src="pictures/13.png">
+<div class=container-title>
+    <span class=title>DAYUX'S <img src="pictures/logopaulparallax.svg"> ARALLAX</span></div>
+<div class=code><div class=js>var list = document.getElementsByClassName('layer');<br>
+
+var css = '.layer{position : absolute;z-index : 1; top : 50%; left : 50%; transform : translate(-50%,-50%); transform-style : preserve-3d; transition : 0.3s ease-out;}@media (min-aspect-ratio: 16/9) { .layer{ width: 115vw; }}@media (max-aspect-ratio: 16/9) { .layer{ height: 115vh; }}',<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;head = document.head || document.getElementsByTagName('head')[0],<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style = document.createElement('style');<br>
+
+head.appendChild(style);<br>
+
+style.type = 'text/css';<br>
+
+if (style.styleSheet){<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style.styleSheet.cssText = css;<br>
+
+} else {<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style.appendChild(document.createTextNode(css));<br>
+
+}<br>
+
+document.addEventListener('mousemove', function (e) {<br>
+
+
+ if (list !== null) {<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (i = 0; i < list.length; i++) {<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var mX = e.screenX;<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var mY = e.screenY;<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var scrH = window.screen.height / 100;<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var scrW = window.screen.width / 100 ;<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var x = (mX / scrW - 50) * list[i].getAttribute('layer-depth');<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var y = (mY / scrH -50) * list[i].getAttribute('layer-depth');<br>
+
+ 
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list[i].style.left = 50 - x +'%';<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;list[i].style.top = 50 - y +'%';<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+
+});<br>
+    </div>
+    </div>
+    <script src="DayuxParallax.js"></script>
+</body>

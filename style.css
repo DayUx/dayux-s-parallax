@@ -1,0 +1,62 @@
+body,html{
+    
+    width: 100%;
+}
+body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.title{
+    position: relative;
+    z-index: 1;
+    font-size: 7vw;
+    color:#454545;
+    font-weight: 700
+}
+
+.container-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    
+}
+span img{
+    height: 7vw;
+    padding: 0 1vw  0 3vw 
+}
+.logo{
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    z-index: 2;
+    width: 50px;
+}
+.code{
+    position: relative;
+    z-index: 3;
+    padding: 50px;
+    background: #fff;
+}
+.js{
+    width: 50%;
+    border-radius: 20px;
+    padding: 50px;
+background: #ededed;
+box-shadow: inset 20px 20px 60px #c9c9c9,
+            inset -20px -20px 60px #ffffff;
+}

@@ -1,0 +1,733 @@
+html,body {
+	font-family: Nunito Sans;
+	color: #c2c2c2;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+	text-align:center;
+	scroll-behavior: smooth;
+}
+body {
+	position:relative;
+}
+/*------------------------------------Flip the phone----------------------------*/
+
+@media all and (max-height: 419px){
+	body {
+		overflow-y: hidden;
+	}
+	#top {
+		display:none;
+	}
+	.section1 {
+		display:none;
+	}
+	.section2 {
+		display:none;
+	}
+	.section2_2{
+		display: none;
+	}
+	.section3 {
+		display:none;
+	}
+	footer {
+		display:none;
+	}
+	.FlipPhone {
+		background-color:#2C2F33;
+		width: 100%;
+		height: 100%;
+		overflow: visible;
+		z-index:1000;
+		margin:0 auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+	.FlipPhone h1 {
+		color:#7289DA;
+		text-align: center;
+		margin:  auto;
+		position: absolute;
+		top: 30%; left: 0; bottom: 0; right: 0;
+		
+		
+	}
+	.Phone {
+		padding:0 5% 0 5% ;
+		animation-name: rotate;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-timing-function: ease-in-out;
+		margin:  auto;
+		position: absolute;
+		top: 50%; left: 0; bottom: 0; right: 0;
+		
+		
+		
+	}
+	::-webkit-scrollbar {
+		display:none;
+	}
+}
+
+@media all and (min-height: 420px){
+	.FlipPhone {
+		display:none;
+	}
+}
+@keyframes rotate {
+    from 	{ transform: rotate(90deg); }
+	75%		{ transform: rotate(0); }    
+    to   	{ transform: rotate(0); }    
+}
+
+/*------------------------------------Premiere partie--------------------------- */
+@media all and (max-width: 839px){
+	.section1 h1 {
+		font-size: 45px;
+		text-align: center;
+		margin:0;
+		padding-top:10px;
+		color: #ffffff;
+	}
+	.section1 h2 {
+		
+		font-size: 30px;
+	}
+	
+}
+
+
+.section1 {
+	background:#39446d ;
+	width: 100%;
+    height: 100%;
+	position : static;
+	z-index : 1;
+	
+}
+
+@media all and (min-width: 840px){
+	.section1 h1 {
+		margin:0;
+		padding-top:10px;
+		color: #ffffff;
+		font-size: 70px;
+		text-align: center;
+	}
+	.section1 h2 {
+		font-size:50px;
+	}
+
+}
+
+.bloc11stsection{         	/*Textes et boutons centres au dessus de l'image*/
+	width: 100%;
+  height: 1%;
+  overflow: visible;
+  z-index:1000;
+  margin: 156px auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.bordureheader { 			/*bordure degoulinante */
+	margin-top:-2px;
+	position:absolute;
+	float:left;
+	margin-left:-100px;
+	left:0;
+	z-index:1000
+}
+
+
+/*--------------------------------Bouton pour ajouter le bot------------------------------------*/
+.start {
+	width: 200px; margin : auto auto 200px auto;
+	
+	
+}
+
+.start button {
+	
+	position : absolute;
+	
+	color:#ffffff;
+   
+    display: block;
+    font-size: 20px;
+    background-color: #7289DA;
+    border: 0px solid #7289DA;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+    outline: none;
+    transition: 0.5s all;
+	box-shadow: 4px -1px 0px black;
+}
+
+.start img {
+	padding-right: 4%;
+	
+}
+
+.start button:hover {
+	cursor: pointer;
+	background-color:#5a6dad;
+	
+	
+}
+
+@keyframes floating {
+    from 	{ transform: translate(0,  -5px); }
+	65%		{ transform: translate(0, 5px); } 
+    to   	{ transform: translate(0, -5px); }    
+}
+
+
+/* ------------------deuxieme partie-------------------- */
+
+
+.section2{
+	
+	background:black ;
+	width: 100%;
+    height: 100%;
+	position : relative ;
+	z-index : 1;
+}
+
+.section2 h1 {
+    margin:0;
+    padding:15% 0 0 0;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+}
+
+/*--------------------------- Troisieme partie -------------------------------*/
+
+
+.section3 {
+	background:#39446d ;
+	width: 100%;
+    height: 100%;
+	position : relative ;
+	z-index : 1;
+}
+
+.section3 h1 {
+    margin:0;
+    padding:15% 0 0 0;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+/*-------------------------Titre et logo------------------------------- */
+
+
+@media all and (max-width: 839px){  /*Le menu ne s'affiche que pour les ecrans de pc*/
+	header {
+	position:absolute;
+	z-index: 1000;
+	left: 0;
+	right: 0;
+	}
+	
+	.bordureheader{
+		margin-top:59px;
+	}
+}
+@media all and (min-width: 840px){
+.bordureheader{
+		margin-top:0px;
+	}
+}
+
+
+
+header
+{
+	
+	
+	display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+	background-color:#2C2F33;
+}
+
+.tetecobra {
+	
+	margin:1%;
+	z-index:1020;
+	border: 5px solid #39446d;
+	border-radius: 50px;
+	
+	animation-name: wave;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes wave {
+	from 	{  }
+	25%		{ 5px solid #39446d; } 
+	50%		{ border: 5px solid transparent; }
+	 
+    to   	{ 5px solid #39446d; }
+	
+}
+
+.titre
+{
+	color:#ffffff;
+	padding-right: 30px;
+	padding-left: 10px;
+}
+
+
+
+/*------------------------------Menu normal-----------------------------*/
+
+
+@media all and (max-width: 839px){  /*Le menu ne s'affiche que pour les ecrans de pc*/
+	.nav {
+		display:none;
+	}
+}
+
+
+header nav a:hover {      /*Les textes du menu changent lorsque la souris passe dessus*/
+	cursor: pointer;
+	color:white;
+	transition: .3s all .3s;
+}
+	
+header nav a  {
+	font-size:1.5em;
+    padding-left: 30px;
+	text-decoration: none;
+	color: #C2C2C2
+	
+}
+
+
+/* ---------------------------Pied de page------------------------ */
+
+
+footer {
+	color:#ffffff;
+	text-align:left;
+	position: absolute;
+	background-color:#2C2F33;
+	z-index : 5;
+}
+
+footer .infofooter {     /* Toutes les infos se trouvant dans le footer */
+	
+	padding-left: 30px;
+	padding-bottom: 30px;
+	z-index : 5;
+}
+
+footer ul {
+	color:#c2c2c2;
+	z-index : 5;
+}
+
+
+.bordurefooter {         /*Bordure degoulinante*/
+	float:left;
+	margin-top:-2px;
+	margin-left:-100px;
+	z-index : 5;
+}
+
+
+/*----------------------------Languettes--------------------------*/
+
+
+.languette{
+	z-index:1;
+    left:-50px;
+	margin-top: -2px;
+}
+/*----------------------------fleches pour descendre-------------------------------------*/
+.godown {
+	z-index:1;
+	position:absolute;
+	margin-bottom: 2%;
+	margin-top: 1;
+	margin-left: -113px;
+	transition:all 0.3s linear;
+	animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+	
+}
+
+
+
+
+
+.GoUp {
+	position:fixed;				
+	right:20px;
+	padding:7px 2px 2px 2px;
+	bottom:20px;
+	display: block;
+    background-color: #39446d;
+    border: 5px solid #30395c;
+    border-radius: 15px;
+    transition: 0.5s all;
+	box-shadow: 4px -1px 0px black;
+	
+}
+
+
+
+
+.test :hover, .test img {
+	
+	border-radius: 50px;
+	background-color:transparent;
+}
+
+
+/*-----------------------les formes qui flottent--------------------*/
+
+
+.rond1{
+	position:absolute;
+	
+	top:80%;
+	right:60%;
+	animation-name: floating;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.rond2{
+	position:absolute;
+	
+	top:30%;
+	right:10%;
+	animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.carré1{
+	position:absolute;
+	top:40%;
+	right:40%;
+	animation-name: floating;
+    animation-duration: 4.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.carré2{
+	position:absolute;
+	top:60%;
+	right:90%;
+	animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.croix1{
+	position:absolute;
+	
+	top:80%;
+	right:20%;
+	animation-name: floating;
+    animation-duration: 4.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.croix2{
+	position:absolute;
+	top:10%;
+	right:70%;
+	animation-name: floating;
+    animation-duration: 3.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+/* ---------------------Scrollbar-------------------------------- */
+
+
+@media all and (max-width: 839px){  /*Suppression du scrollbar sur les tablettes et mobiles*/
+	::-webkit-scrollbar {
+		display:none;
+	}
+}
+
+::-webkit-scrollbar {  /*Largeur du scrollbar*/
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {  /* rail ou glisse le bloc pour monter et descendre */
+	background: #2C2F33;
+}
+
+::-webkit-scrollbar-thumb {  /* bloc pour monter et descendre */
+	background: #30395c;
+	border-radius: 10px;
+	box-shadow: 4px -1px 0px black;
+}
+
+::-webkit-scrollbar-thumb:hover {  /*bloc pour monter et descendre lorsque la souris passe dessus  */
+	background: #5a6dad;
+}
+
+
+
+/*----------------------------------Menu Deroulant-------------------------------------*/
+
+
+@media all and (min-width: 840px){ /*le menu ne s'affiche que pour les tablettes et mobiles*/
+	.menumobile {
+		display:none;
+	}
+}
+
+.menumobile
+{
+	padding-right:3%;
+	font-size:30px;
+	float:right;
+	width:100%;
+}
+
+#menumobile, #menumobile ul{
+	float:right;
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:right;
+}
+
+#menumobile li{
+	display:inline-block;
+	padding-right:3%;
+	text-align:right;
+}
+
+#menumobile ul li{
+	display:inherit;
+}
+
+#menumobile ul {					/*Bloc qui se deroule, au depart sa hauteur est de 0, overflow:hidden; permet de cacher tout*/
+								/*se qui depace du bloc, donc au depart tout car celui ci fait 0 hauteur*/
+	
+	position:absolute;				/*on met en absolu pour que le menu prenne toute la largeur de la page*/
+	z-index: 1000;
+	max-height:0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	-moz-transition: .5s all .3s;
+	-webkit-transition: .5s all .3s;
+	transition: .5s all .3s;
+}
+
+#menumobile li:hover ul {     /*lorsque le curseur survol le bouton du menu, la hauteur max du bloc qui se deroule passe a 15em*/
+	max-height:15em;				/*les elements qui etaient invisible auparavant, deviennent visibles*/
+}
+
+#menumobile li {  /* background des liens sous menus */
+	background:#2C2F33;
+}
+
+#menumobile li li:hover {  /* background des liens menus et sous menus au survol */
+	background:#39446d;
+}
+
+#menumobile a {  /* les a href */
+	width:100%;
+	text-align:right;
+	text-decoration:none;
+	display:block;
+	color:#fff;
+}
+/* spécifique page 2 */
+#titrepage2{
+	font-size:30px;
+	text-align: center;
+	padding-top:2%;
+	overflow:visible;
+	z-index:3;
+	
+}
+.txt_sect1_2{
+	text-align:left;
+	font-size:20px;
+	margin-top:2%;
+	margin-left:15%;
+	margin-right:15%;
+	background-color:#2C2F33;
+	padding:1%;
+	box-shadow: 10px 10px 5px #000000;
+	overflow:none;
+	z-index:3;
+	position:relative;
+	border-radius: 10px;
+}
+.txt_sect2_2{
+	text-align:left;
+	font-size:20px;
+	margin-left:15%;
+	margin-right:15%;
+	margin-top:2%;
+	background-color:#2C2F33;
+	padding:1%;
+	box-shadow: 10px 10px 5px #000000;
+	overflow:none;
+	z-index:3;
+	position: relative;
+	border-radius: 10px;
+}
+.titrepage2_2{
+	margin-top:auto;
+	padding-top: 10%;
+    position:relative;
+    z-index:3;
+	
+}
+.titrepage2_2 h2{
+	font-size:35px;
+	text-align:center;
+    z-index:3;
+	
+}
+.section2_2{
+	background: #42305c;
+	width: 100%;
+    height: 100%;
+	position : static;
+	z-index : 1;
+	
+}
+/*-----------------------les formes qui flottent-2-------------------*/
+
+
+.PSC{
+	position:absolute;
+	animation-name: floating;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    padding-left: 10%;
+    padding-top: 200px;
+    right:0;
+	z-index : 2;
+}
+
+.PSX{
+	position:absolute;
+	left:0;
+    padding-left: 3%;
+    padding-top:600px;
+	animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+	z-index : 2;
+}
+
+.PST{
+	position:absolute;
+	animation-name: floating;
+    animation-duration: 4.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+	padding-top:10%;
+    left:0;
+    padding-left: 10%;
+	z-index : 2;
+}
+
+.PSS{
+	position:absolute;
+	animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    padding-right: 5%;
+    padding-top: 500px;
+    right: 0;
+	z-index : 2;
+}
+
+.PSX2{
+	position:absolute;
+	animation-name: floating;
+    animation-duration: 4.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    padding-top: 860px;
+	z-index : 2;
+}
+
+.PST2{
+	position:absolute;
+	animation-name: floating;
+    animation-duration: 3.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    padding-top:730px;
+    padding-left:11%;
+    left:0;
+	z-index: 2;
+}
+/*bouttons page 2*/
+.start2{
+    width: 200px; margin : auto auto 5px auto;
+}
+.start2 button {
+	position : relative;
+	color:#ffffff;
+    display: block;
+    font-size: 20px;
+    background-color: #7289DA;
+    border: 0px solid #7289DA;
+    border-radius: 10px;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+    outline: none;
+    transition: 0.5s all;
+	box-shadow: 4px -1px 0px black;
+}
+.start2 img {
+	padding-right: 4%;	
+}
+.start2 button:hover {
+	cursor: pointer;
+	background-color:#5a6dad;	
+}
+
+
+
+
+
+
+
